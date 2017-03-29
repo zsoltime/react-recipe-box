@@ -23,6 +23,7 @@ module.exports = {
     modules: [
       path.resolve(__dirname),
       'node_modules',
+      './app/api',
       './app/components',
     ],
     alias: {
