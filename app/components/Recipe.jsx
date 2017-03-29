@@ -14,9 +14,11 @@ const Recipe = ({ id, name, image, time, calories, ingredients, onDelete }) => {
       <button
         className="recipe__btn recipe__btn--delete"
         data-id={id}
-        aria-label="Delete"
+        aria-label="Delete recipe"
         onClick={() => onDelete(id)}
-      >&times;</button>
+      >
+        <span aria-hidden="true">&times;</span>
+      </button>
       <h2 className="recipe__title">{name}</h2>
       {image && (
         <div className="recipe__image">

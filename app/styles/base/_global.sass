@@ -9,10 +9,22 @@ body
   box-sizing: border-box
   color: $text-color
   font-family: $font-family-sans
-  font-weight: 400
+  font-weight: 300
   line-height: $line-height
   margin: 0
 
 h1, h2, h3
-  font-weight: 400
+  font-weight: 300
   margin: 0
+
+::placeholder
+  color: transparentize($text-color, .3)
+  font-size: .875rem
+  font-weight: 300
+
+button
+  border: 0
+  cursor: pointer
+  font-family: inherit
+  font-size: inherit
+  font-weight: inherit
